@@ -1,0 +1,9 @@
+.settings/
+.apt_generated/
+build/
+gwt-unitCache/
+target/
+war/dagger2/
+war/WEB-INF/classes/
+war/WEB-INF/deploy/
+war/WEB-INF/lib/
