@@ -2,6 +2,7 @@
 
 As per request, this project demonstrates how to use Dagger2, APT together with GWT.
 
-There is an Eclipse project, which sets the annotation processor for Dagger2.
-There is a Maven project which does the same.
+There is a Maven project which sets the annotation processor for Dagger2. Run using 
+`mvn gwt:devmode` and package using `mvn package`.
+
 

@@ -7,7 +7,7 @@
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -15,22 +15,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.gwt.dagger2.client;
+package coffee.client;
 
-public class Console {
+import com.google.gwt.core.client.EntryPoint;
+import dagger.Component;
+import javax.inject.Singleton;
 
-	public static void log(Object object) {
-		log(object.toString());
-	}
-	
-	public static native void log(Object... objects) /*-{
-		for (i = 0; i < objects.length; i++) {
-			log(objects[i]);
-		}
-	}-*/;
+public class CoffeeApp implements EntryPoint {
 
-	public static native void log(String message) /*-{
-		console.log(message);
-	}-*/;
-	
+    @Override public void onModuleLoad() {
+        Util.log("GWT+Dagger2 v" + System.getProperty("project.version") + " starting...");
+        Coffee coffee = DaggerCoffeeApp_Coffee.builder().build();
+        coffee.maker().brew();
+    }
+
+    @Singleton
+    @Component(modules = { DripCoffeeModule.class })
+    public interface Coffee {
+        CoffeeMaker maker();
+    }
 }
