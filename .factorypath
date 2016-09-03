@@ -1,6 +1,7 @@
 <factorypath>
-    <factorypathentry kind="VARJAR" id="M2_REPO\com\google\dagger\dagger\2.6\dagger-2.6.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO\com\google\dagger\dagger-compiler\2.6\dagger-compiler-2.6.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO\com\google\dagger\dagger-producers\2.6\dagger-producers-2.6.jar" enabled="true" runInBatchMode="false"/>    
-    <factorypathentry kind="VARJAR" id="M2_REPO\com\google\guava\guava\19.0\guava-19.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/google/dagger/dagger-compiler/2.6/dagger-compiler-2.6.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/google/dagger/dagger/2.6/dagger-2.6.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/google/dagger/dagger-producers/2.6/dagger-producers-2.6.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/google/guava/guava/19.0/guava-19.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/javax/inject/javax.inject/1/javax.inject-1.jar" enabled="true" runInBatchMode="false"/>
 </factorypath>
