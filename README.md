@@ -3,7 +3,7 @@
 ## Disclaimer
 
 From the feedback we've received, using this project in the Eclipse IDE, combining 
-the Google Eclipse plug-in together with Eclipe Maven integration has proven very problematic.
+the Google Eclipse plug-in together with Eclipse Maven integration has proven very problematic.
 
 ## Background
 
