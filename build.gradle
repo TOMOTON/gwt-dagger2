@@ -1,0 +1,38 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'de.richsource.gradle.plugins:gwt-gradle-plugin:0.6'
+    }
+}
+
+plugins {
+  id "net.ltgt.apt" version "0.8"
+}
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'gwt'
+apply plugin: 'net.ltgt.apt'
+
+repositories {
+    jcenter()
+}
+
+// In this section you declare the dependencies for your production and test code
+dependencies {
+    apt     'com.google.dagger:dagger-compiler:2.6'
+    apt     'com.google.guava:guava:19.0'
+    compile 'com.google.dagger:dagger:2.6'
+    compile 'com.google.dagger:dagger-gwt:2.6'
+    compile 'javax.inject:javax.inject:1'
+    compile 'com.google.gwt:gwt-user:2.8.0-rc1'
+    compile 'com.google.gwt:gwt-dev:2.8.0-rc1'
+}
+
+gwt {
+	minHeapSize = "512M";
+    maxHeapSize = "1024M";
+    modules 'com.example.gwt.dagger2.Dagger2'
+}

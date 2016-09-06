@@ -1,7 +1,8 @@
 .apt_generated/
+.gradle/
 build/
 gwt-unitCache/
-target/
+build/
 war/dagger2/
 war/WEB-INF/classes/
 war/WEB-INF/deploy/
